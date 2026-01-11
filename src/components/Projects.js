@@ -1,44 +1,52 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import "animate.css";
+import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
+import TrackVisibility from "react-on-screen";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
-
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "AI Development Platform & Planning Automation",
+      description:
+        "Built AI-powered planning workspace using Claude AI, Azure DevOps integration, and Model Context Protocol (MCP) for automated workflows and feature prioritization.",
+      // replace with proper images
+      imgUrl: "https://placehold.co/600x400",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "IFS Tenant Migration – Hub-Spoke Infrastructure",
+      description:
+        "Led migration to IFS Tenant with hub-and-spoke topology using Terraform, automating pre-prod validation, module compliance, and environment provisioning.",
+      // replace with proper images
+      imgUrl: "https://placehold.co/600x400",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Terraform Platform Upgrades (0.12 → 1.x)",
+      description:
+        "Planned and executed sequential Terraform migration for infrastructure modules with automated validation and sandbox testing.",
+      // replace with proper images
+      imgUrl: "https://placehold.co/600x400",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "AI Platform Enablement – Repository Documentation Automation",
+      description:
+        "Standardized AI-friendly documentation across repositories with CI-based generation and Serena memory integration for team onboarding.",
+      // replace with proper images
+      imgUrl: "https://placehold.co/600x400",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Agrox – AI-Powered Cinnamon Quality Assessment",
+      description:
+        "Developed ML and CV solution for automated cinnamon quality detection using Python, TensorFlow, Keras, OpenCV, achieving national recognition (NBQSA Bronze).",
+      // replace with proper images
+      imgUrl: "https://placehold.co/600x400",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Cloud-Native Microservices Development",
+      description:
+        "Designed and deployed .NET Core microservices on Azure AKS with CI/CD, Docker, OAuth2.0 security, and API Management for multi-tenant SaaS platforms.",
+      // replace with proper images
+      imgUrl: "https://placehold.co/600x400",
     },
   ];
 
@@ -48,51 +56,81 @@ export const Projects = () => {
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <h2>Projects & Achievements</h2>
+                  <p>
+                    Here are some of the key projects and innovations led by
+                    Himasha Ranaweera, showcasing expertise in DevOps, Cloud,
+                    AI, and Automation.
+                  </p>
+                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                    <Nav
+                      variant="pills"
+                      className="nav-pills mb-5 justify-content-center align-items-center"
+                      id="pills-tab"
+                    >
+                      <Nav.Item>
+                        <Nav.Link eventKey="first">Cloud & DevOps</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">AI & Automation</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="third">
+                          Research & Innovation
+                        </Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                    <Tab.Content
+                      id="slideInUp"
+                      className={
+                        isVisible ? "animate__animated animate__slideInUp" : ""
+                      }
+                    >
+                      {/* Cloud & DevOps */}
+                      <Tab.Pane eventKey="first">
+                        <Row>
+                          {projects.slice(0, 3).map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
+                        </Row>
+                      </Tab.Pane>
+
+                      {/* AI & Automation */}
+                      <Tab.Pane eventKey="second">
+                        <Row>
+                          {projects.slice(3, 5).map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
+                        </Row>
+                      </Tab.Pane>
+
+                      {/* Research & Innovation */}
+                      <Tab.Pane eventKey="third">
+                        <Row>
+                          {projects.slice(5, 6).map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
+                        </Row>
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Tab.Container>
+                </div>
+              )}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img
+        className="background-image-right"
+        src={colorSharp2}
+        alt="Background design"
+      />
     </section>
-  )
-}
+  );
+};

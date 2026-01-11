@@ -616,3 +616,112 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+
+/************ Technologies Section ************/
+.technologies {
+  padding: 80px 0;
+  position: relative;
+  background: #151515;
+}
+
+.technologies h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.technologies p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+
+/* Tabs styling */
+.technologies .nav.nav-pills {
+  width: 80%;
+  margin: 0 auto 50px auto;
+  border-radius: 50px;
+  background-color: rgba(255,255,255,0.1);
+  overflow: hidden;
+}
+
+.technologies .nav-pills .nav-item {
+  width: 20%;
+}
+
+.technologies .nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.technologies .nav-pills .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #AA367C, #4A2FBD);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.technologies .nav-pills .nav-link.active::before {
+  width: 100%;
+}
+
+.technologies .nav-pills .nav-link.active {
+  border: 1px solid #fff;
+}
+
+/* Tech cards row */
+.tech-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+/* Circular Tech Cards */
+.tech-card {
+  background: #000;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-card img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.tech-card:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 25px rgba(255, 69, 0, 0.7);
+}
+
+.tech-card p {
+  display: none; /* hide label under icon to match your PNG style */
+}
