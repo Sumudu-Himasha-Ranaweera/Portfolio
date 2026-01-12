@@ -901,44 +901,82 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 60px;
 }
 
-.edu-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  transition: transform 0.3s ease;
+/* Education Card - Compact Design */
+.edu-card-static {
+  border-radius: 16px;
+  padding: 20px;
+  height: 100%;
+  background: linear-gradient(160deg, #1e1e2f 0%, #151521 100%);
+  border: 1px solid rgba(170, 54, 124, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.edu-card:hover {
-  transform: translateY(-5px);
+.edu-card-static::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #AA367C, #4A2FBD);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.edu-card-static:hover {
   border-color: rgba(170, 54, 124, 0.5);
+  box-shadow: 0 15px 40px rgba(170, 54, 124, 0.15);
+  transform: translateY(-3px);
 }
 
-.edu-card .card-subtitle {
-  color: #AA367C !important;
-  font-size: 14px;
+.edu-card-static:hover::before {
+  opacity: 1;
+}
+
+.edu-period {
+  color: #AA367C;
+  font-size: 11px;
   font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
 }
 
-.edu-card .card-title {
-  color: #fff;
-  font-size: 16px;
+.edu-card-static h4 {
+  font-size: 18px;
   font-weight: 700;
-  margin-bottom: 12px;
+  color: #fff;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
 }
 
-.edu-card .card-text {
+.edu-degree {
   color: #B8B8B8;
   font-size: 14px;
-  line-height: 1.6;
 }
 
-.edu-card .grade {
-  color: #4A2FBD;
+.edu-spec {
+  color: #B8B8B8;
+  font-size: 14px;
+}
+
+.edu-grade {
+  display: inline-block;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  color: #000;
+  padding: 5px 14px;
+  border-radius: 15px;
+  font-size: 10px;
   font-weight: 700;
-  background: linear-gradient(90deg, #AA367C, #4A2FBD);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
 }
 
 /* Certifications Cards Section */

@@ -136,28 +136,16 @@ export const Certifications = () => {
                   {/* Education Section */}
                   <div className="education-section">
                     <h3>Education</h3>
-                    <Row>
+                    <Row className="justify-content-center">
                       {education.map((edu, index) => (
                         <Col key={index} xs={12} md={4} className="mb-4">
-                          <Card className="edu-card h-100">
-                            <Card.Body>
-                              <Card.Subtitle className="mb-2 text-muted">
-                                {edu.period}
-                              </Card.Subtitle>
-                              <Card.Title>{edu.institution}</Card.Title>
-                              <Card.Text>
-                                <strong>{edu.degree}</strong>
-                                <br />
-                                {edu.specialization}
-                                {edu.grade && (
-                                  <>
-                                    <br />
-                                    <span className="grade">{edu.grade}</span>
-                                  </>
-                                )}
-                              </Card.Text>
-                            </Card.Body>
-                          </Card>
+                          <div className="edu-card-static">
+                            <span className="edu-period">{edu.period}</span>
+                            <h4>{edu.institution}</h4>
+                            <p className="edu-degree">{edu.degree}</p>
+                            <p className="edu-spec">{edu.specialization}</p>
+                            {edu.grade && <span className="edu-grade">{edu.grade}</span>}
+                          </div>
                         </Col>
                       ))}
                     </Row>
