@@ -10,22 +10,19 @@ export const Projects = () => {
       title: "IFS Tenant Migration – Hub-Spoke Infrastructure",
       description:
         "Led infrastructure migration to IFS Tenant with hub-and-spoke topology using Terraform v1.13.3. Designed hub-spoke skeleton with multi-hub attach capability and automated pre-prod validation workflows.",
-      imgUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
-      tech: "Terraform, Azure, Infrastructure as Code",
+      tech: "Terraform, Azure, IaC",
     },
     {
       title: "Terraform Platform Upgrades (0.12 → 1.x)",
       description:
         "Led sequential Terraform migration across platform infrastructure from 0.12 to 1.x with automated validation. Developed migration scripts and delivered training to engineering teams.",
-      imgUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop",
-      tech: "Terraform, Azure, CI/CD, Tfmigrate",
+      tech: "Terraform, Azure, CI/CD",
     },
     {
       title: "Azure Cloud Infrastructure – Multi-Tenant SaaS",
       description:
         "Designed and deployed Azure cloud infrastructure (AKS, API Management, Front Door, Service Bus) using Terraform for multi-tenant SaaS platform at IFS R&D.",
-      imgUrl: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&h=400&fit=crop",
-      tech: "Azure, AKS, Terraform, ARM Templates",
+      tech: "Azure, AKS, Terraform",
     },
   ];
 
@@ -34,50 +31,44 @@ export const Projects = () => {
       title: "AI Development Platform & Planning Automation",
       description:
         "Pioneered custom AI agent framework using Claude Code with 40+ specialized slash commands. Architected MCP server integrating Claude AI with Azure DevOps, achieving 60% reduction in planning overhead.",
-      imgUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
-      tech: "Claude AI, MCP, Node.js, Azure DevOps API",
-      badge: "🚀 Impact: 30%+ Productivity Gains",
+      tech: "Claude AI, MCP, Node.js",
+      badge: "🚀 30%+ Productivity",
     },
     {
       title: "8 MCP Server Implementations",
       description:
         "Architected and implemented 8 Model Context Protocol (MCP) servers: Claude Code, Azure DevOps MCP, Serena MCP, Zen MCP, Task Master MCP, and Puppeteer MCP for team-wide AI adoption.",
-      imgUrl: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop",
-      tech: "MCP, Claude AI, Docker, Node.js",
+      tech: "MCP, Claude AI, Docker",
       badge: "🤖 80% Team Adoption",
     },
     {
-      title: "AI Platform Enablement – Documentation Automation",
+      title: "Repository Documentation Automation",
       description:
         "Standardized AI-friendly documentation across all repositories with automated CI-based generation. Built templates for CHANGELOG, Developer Guide, and Architecture diagrams with Serena memory integration.",
-      imgUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop",
-      tech: "CI/CD Pipelines, Serena MCP, Mermaid Diagrams",
+      tech: "CI/CD, Serena MCP, Mermaid",
     },
   ];
 
   const researchProjects = [
     {
-      title: "Agrox – AI-Powered Cinnamon Quality Assessment",
+      title: "Agrox – Cinnamon Quality Assessment",
       description:
         "Developed AI and Machine Learning-based solution for automated cinnamon quality assessment and disease detection to support Sri Lankan agricultural research and export industry.",
-      imgUrl: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&h=400&fit=crop",
-      tech: "Python, TensorFlow, Keras, OpenCV, CNN",
-      badge: "🏆 NBQSA 2023 Bronze Award",
+      tech: "Python, TensorFlow, OpenCV",
+      badge: "🏆 NBQSA Bronze",
     },
     {
       title: "Research Paper Publication",
       description:
         "Published research paper at the 5th International Conference on Advancements in Computing (2023). Certificate of recognition for contribution to agricultural AI and computer vision research.",
-      imgUrl: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=600&h=400&fit=crop",
-      tech: "Image Processing, Computer Vision, Agricultural AI",
-      badge: "📄 International Publication",
+      tech: "Computer Vision, ML",
+      badge: "📄 International",
     },
     {
-      title: "Cloud-Native Microservices Development",
+      title: "Cloud-Native Microservices",
       description:
         "Designed and deployed .NET Core microservices on Azure AKS with CI/CD, Docker, OAuth2.0 security, and API Management for multi-tenant SaaS platforms at CodeGen International.",
-      imgUrl: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=600&h=400&fit=crop",
-      tech: ".NET Core, Azure AKS, Docker, OAuth 2.0",
+      tech: ".NET Core, AKS, Docker",
     },
   ];
 
