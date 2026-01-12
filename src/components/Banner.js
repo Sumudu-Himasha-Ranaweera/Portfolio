@@ -7,10 +7,10 @@ import headerImg from "../assets/img/header-img.svg";
 
 export const Banner = () => {
   const toRotate = [
-    "DevOps Engineer",
-    "CI/CD Automation",
-    "Cloud Infrastructure",
-    "AI DevOps",
+    "Senior DevOps Engineer",
+    "AWS & Azure Specialist",
+    "AI Development Lead",
+    "Cloud Infrastructure Expert",
   ];
 
   const TYPING_SPEED = 90;
@@ -60,7 +60,7 @@ export const Banner = () => {
                   }
                 >
                   <span className="tagline">
-                    Proven Expertise in DevOps & AI Automation
+                    CI/CD Automation • Infrastructure as Code • Kubernetes & Container Orchestration
                   </span>
 
                   <h1>
@@ -71,21 +71,21 @@ export const Banner = () => {
                   </h1>
 
                   <p>
-                    Senior DevOps Engineer with 5+ years of experience
-                    automating CI/CD pipelines, cloud infrastructure, and
-                    Kubernetes-based platforms across AWS, Azure, and Oracle
-                    Cloud—reducing deployment times by up to{" "}
-                    <strong>60%</strong>.
+                    Senior DevOps Engineer with <strong>5+ years</strong> of experience in cloud infrastructure 
+                    and <strong>2+ years</strong> leading AI-assisted development using Claude AI, GitHub Copilot, 
+                    and Cursor IDE. Currently at IFS R&D International, driving DevOps excellence through CI/CD 
+                    automation, Infrastructure as Code (Terraform), and pioneering Model Context Protocol (MCP) 
+                    server implementations—reducing deployment times by up to <strong>60%</strong>.
                   </p>
 
                   <button
                     onClick={() =>
                       document
-                        .getElementById("contact")
+                        .getElementById("connect")
                         ?.scrollIntoView({ behavior: "smooth" })
                     }
                   >
-                    Let’s Connect <ArrowRightCircle size={25} />
+                    Let's Connect <ArrowRightCircle size={25} />
                   </button>
                 </div>
               )}

@@ -5,48 +5,79 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
-  const projects = [
-    {
-      title: "AI Development Platform & Planning Automation",
-      description:
-        "Built AI-powered planning workspace using Claude AI, Azure DevOps integration, and Model Context Protocol (MCP) for automated workflows and feature prioritization.",
-      // replace with proper images
-      imgUrl: "https://placehold.co/600x400",
-    },
+  const cloudDevOpsProjects = [
     {
       title: "IFS Tenant Migration – Hub-Spoke Infrastructure",
       description:
-        "Led migration to IFS Tenant with hub-and-spoke topology using Terraform, automating pre-prod validation, module compliance, and environment provisioning.",
-      // replace with proper images
-      imgUrl: "https://placehold.co/600x400",
+        "Led infrastructure migration to IFS Tenant with hub-and-spoke topology using Terraform v1.13.3. Designed hub-spoke skeleton with multi-hub attach capability and automated pre-prod validation workflows.",
+      imgUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
+      tech: "Terraform, Azure, Infrastructure as Code",
     },
     {
       title: "Terraform Platform Upgrades (0.12 → 1.x)",
       description:
-        "Planned and executed sequential Terraform migration for infrastructure modules with automated validation and sandbox testing.",
-      // replace with proper images
-      imgUrl: "https://placehold.co/600x400",
+        "Led sequential Terraform migration across platform infrastructure from 0.12 to 1.x with automated validation. Developed migration scripts and delivered training to engineering teams.",
+      imgUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop",
+      tech: "Terraform, Azure, CI/CD, Tfmigrate",
     },
     {
-      title: "AI Platform Enablement – Repository Documentation Automation",
+      title: "Azure Cloud Infrastructure – Multi-Tenant SaaS",
       description:
-        "Standardized AI-friendly documentation across repositories with CI-based generation and Serena memory integration for team onboarding.",
-      // replace with proper images
-      imgUrl: "https://placehold.co/600x400",
+        "Designed and deployed Azure cloud infrastructure (AKS, API Management, Front Door, Service Bus) using Terraform for multi-tenant SaaS platform at IFS R&D.",
+      imgUrl: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&h=400&fit=crop",
+      tech: "Azure, AKS, Terraform, ARM Templates",
     },
+  ];
+
+  const aiAutomationProjects = [
+    {
+      title: "AI Development Platform & Planning Automation",
+      description:
+        "Pioneered custom AI agent framework using Claude Code with 40+ specialized slash commands. Architected MCP server integrating Claude AI with Azure DevOps, achieving 60% reduction in planning overhead.",
+      imgUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
+      tech: "Claude AI, MCP, Node.js, Azure DevOps API",
+      badge: "🚀 Impact: 30%+ Productivity Gains",
+    },
+    {
+      title: "8 MCP Server Implementations",
+      description:
+        "Architected and implemented 8 Model Context Protocol (MCP) servers: Claude Code, Azure DevOps MCP, Serena MCP, Zen MCP, Task Master MCP, and Puppeteer MCP for team-wide AI adoption.",
+      imgUrl: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop",
+      tech: "MCP, Claude AI, Docker, Node.js",
+      badge: "🤖 80% Team Adoption",
+    },
+    {
+      title: "AI Platform Enablement – Documentation Automation",
+      description:
+        "Standardized AI-friendly documentation across all repositories with automated CI-based generation. Built templates for CHANGELOG, Developer Guide, and Architecture diagrams with Serena memory integration.",
+      imgUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop",
+      tech: "CI/CD Pipelines, Serena MCP, Mermaid Diagrams",
+    },
+  ];
+
+  const researchProjects = [
     {
       title: "Agrox – AI-Powered Cinnamon Quality Assessment",
       description:
-        "Developed ML and CV solution for automated cinnamon quality detection using Python, TensorFlow, Keras, OpenCV, achieving national recognition (NBQSA Bronze).",
-      // replace with proper images
-      imgUrl: "https://placehold.co/600x400",
+        "Developed AI and Machine Learning-based solution for automated cinnamon quality assessment and disease detection to support Sri Lankan agricultural research and export industry.",
+      imgUrl: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&h=400&fit=crop",
+      tech: "Python, TensorFlow, Keras, OpenCV, CNN",
+      badge: "🏆 NBQSA 2023 Bronze Award",
+    },
+    {
+      title: "Research Paper Publication",
+      description:
+        "Published research paper at the 5th International Conference on Advancements in Computing (2023). Certificate of recognition for contribution to agricultural AI and computer vision research.",
+      imgUrl: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=600&h=400&fit=crop",
+      tech: "Image Processing, Computer Vision, Agricultural AI",
+      badge: "📄 International Publication",
     },
     {
       title: "Cloud-Native Microservices Development",
       description:
-        "Designed and deployed .NET Core microservices on Azure AKS with CI/CD, Docker, OAuth2.0 security, and API Management for multi-tenant SaaS platforms.",
-      // replace with proper images
-      imgUrl: "https://placehold.co/600x400",
+        "Designed and deployed .NET Core microservices on Azure AKS with CI/CD, Docker, OAuth2.0 security, and API Management for multi-tenant SaaS platforms at CodeGen International.",
+      imgUrl: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=600&h=400&fit=crop",
+      tech: ".NET Core, Azure AKS, Docker, OAuth 2.0",
     },
   ];
 
@@ -64,9 +95,9 @@ export const Projects = () => {
                 >
                   <h2>Projects & Achievements</h2>
                   <p>
-                    Here are some of the key projects and innovations led by
-                    Himasha Ranaweera, showcasing expertise in DevOps, Cloud,
-                    AI, and Automation.
+                    Key projects and innovations showcasing expertise in DevOps, Cloud Infrastructure, 
+                    AI Automation, and Research. Delivered enterprise-scale solutions at IFS R&D, 
+                    CodeGen International, and Pearson Lanka.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -95,7 +126,7 @@ export const Projects = () => {
                       {/* Cloud & DevOps */}
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.slice(0, 3).map((project, index) => (
+                          {cloudDevOpsProjects.map((project, index) => (
                             <ProjectCard key={index} {...project} />
                           ))}
                         </Row>
@@ -104,7 +135,7 @@ export const Projects = () => {
                       {/* AI & Automation */}
                       <Tab.Pane eventKey="second">
                         <Row>
-                          {projects.slice(3, 5).map((project, index) => (
+                          {aiAutomationProjects.map((project, index) => (
                             <ProjectCard key={index} {...project} />
                           ))}
                         </Row>
@@ -113,7 +144,7 @@ export const Projects = () => {
                       {/* Research & Innovation */}
                       <Tab.Pane eventKey="third">
                         <Row>
-                          {projects.slice(5, 6).map((project, index) => (
+                          {researchProjects.map((project, index) => (
                             <ProjectCard key={index} {...project} />
                           ))}
                         </Row>

@@ -4,115 +4,154 @@ import TrackVisibility from "react-on-screen";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 export const Technologies = () => {
-const techCategories = {
-  cloud: [
-    {
-      name: "Azure",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
-    },
-    {
-      name: "AWS",
-      img: "https://static.vecteezy.com/system/resources/thumbnails/066/712/306/small/aws-icon-logo-symbol-free-png.png",
-    },
-    {
-      name: "Oracle Cloud",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg",
-    },
-  ],
-  devops: [
-    {
-      name: "Terraform",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
-    },
-    {
-      name: "Docker",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-    },
-    {
-      name: "Kubernetes",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg",
-    },
-    {
-      name: "Jenkins",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
-    },
-    {
-      name: "Ansible",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg",
-    },
-  ],
-  programming: [
-    {
-      name: ".NET Core",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
-    },
-    {
-      name: "Node.js",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    },
-    {
-      name: "Python",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-    },
-    {
-      name: "Java",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-    },
-    {
-      name: "JavaScript",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-    },
-    {
-      name: "TypeScript",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-    },
-    {
-      name: "React.js",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    },
-    {
-      name: "React Native",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    },
-    {
-      name: "Next.js",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-    },
-  ],
-  ai: [
-    {
-      name: "Claude AI",
-      img: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg", // public domain SVG available :contentReference[oaicite:1]{index=1}
-    },
-    {
-      name: "GitHub Copilot",
-      img: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-copilot-white-icon.png", // Copilot icon from Lobehub repo :contentReference[oaicite:2]{index=2}
-    },
-    {
-      name: "Cursor IDE",
-      img: "https://img.icons8.com/color/512/cursor-ai.png", // Cursor logo available via Lobehub :contentReference[oaicite:3]{index=3}
-    },
-  ],
-  security: [
-    {
-      name: "OAuth 2.0",
-      img: "https://miro.medium.com/1*e2x6biTeTNWeMc-C4aPogw.jpeg",
-    },
-    {
-      name: "JWT",
-      img: "https://cdn.worldvectorlogo.com/logos/jwt-3.svg",
-    },
-    {
-      name: "Auth0",
-      img: "https://images.seeklogo.com/logo-png/42/1/auth0-logo-png_seeklogo-426699.png",
-    },
-    {
-      name: "Azure AD",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
-    },
-  ],
-};
+  const techCategories = {
+    cloud: [
+      {
+        name: "Azure",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
+      },
+      {
+        name: "AWS",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+      },
+      {
+        name: "Oracle",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg",
+      },
+      {
+        name: "K8s",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg",
+      },
+      {
+        name: "Docker",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+      },
+    ],
+    devops: [
+      {
+        name: "Terraform",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
+      },
+      {
+        name: "Ansible",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg",
+      },
+      {
+        name: "Jenkins",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
+      },
+      {
+        name: "ADO",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg",
+      },
+      {
+        name: "Actions",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg",
+      },
+      {
+        name: "Git",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      },
+      {
+        name: "Linux",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+      },
+      {
+        name: "Grafana",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg",
+      },
+    ],
+    programming: [
+      {
+        name: ".NET",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
+      },
+      {
+        name: "Node.js",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      },
+      {
+        name: "Python",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      },
+      {
+        name: "Java",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      },
+      {
+        name: "TS",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "React",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
+        name: "Next.js",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        name: "Bash",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
+      },
+    ],
+    ai: [
+      {
+        name: "TensorFlow",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      },
+      {
+        name: "Keras",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg",
+      },
+      {
+        name: "OpenCV",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
+      },
+      {
+        name: "Jupyter",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
+      },
+      {
+        name: "NumPy",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
+      },
+      {
+        name: "Pandas",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
+      },
+    ],
+    databases: [
+      {
+        name: "SQL Server",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg",
+      },
+      {
+        name: "Postgres",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+      },
+      {
+        name: "MongoDB",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      },
+      {
+        name: "Dynamo",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dynamodb/dynamodb-original.svg",
+      },
+      {
+        name: "Redis",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+      },
+    ],
+  };
 
+  const categoryLabels = {
+    cloud: "Cloud",
+    devops: "DevOps & CI/CD",
+    programming: "Languages",
+    ai: "AI & ML",
+    databases: "Databases",
+  };
 
   return (
     <section className="skill" id="skills">
@@ -133,11 +172,10 @@ const techCategories = {
                                 : ""
                             }
                           >
-                            <h2>Technologies I Use</h2>
+                            <h2>Technical Skills</h2>
                             <p>
-                              These are the main tools, platforms, and
-                              frameworks I use for Cloud, DevOps, AI, and
-                              Software Development.
+                              Expertise across Cloud Platforms, DevOps & CI/CD, Infrastructure as Code, 
+                              AI Development Tools, and Full-Stack Technologies.
                             </p>
 
                             <Tab.Container
@@ -148,29 +186,13 @@ const techCategories = {
                                 variant="pills"
                                 className="nav-pills mb-5 justify-content-center align-items-center"
                               >
-                                <Nav.Item>
-                                  <Nav.Link eventKey="cloud">Cloud</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                  <Nav.Link eventKey="devops">
-                                    DevOps & Infra
-                                  </Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                  <Nav.Link eventKey="programming">
-                                    Programming
-                                  </Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                  <Nav.Link eventKey="ai">
-                                    AI & Automation
-                                  </Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                  <Nav.Link eventKey="security">
-                                    Security
-                                  </Nav.Link>
-                                </Nav.Item>
+                                {Object.keys(techCategories).map((category) => (
+                                  <Nav.Item key={category}>
+                                    <Nav.Link eventKey={category}>
+                                      {categoryLabels[category]}
+                                    </Nav.Link>
+                                  </Nav.Item>
+                                ))}
                               </Nav>
 
                               <Tab.Content
@@ -195,9 +217,9 @@ const techCategories = {
                                               src={tech.img}
                                               alt={tech.name}
                                             />
-                                            {/* <Card.Body>
-                                  <Card.Text>{tech.name}</Card.Text>
-                                </Card.Body> */}
+                                            <Card.Body>
+                                              <Card.Text>{tech.name}</Card.Text>
+                                            </Card.Body>
                                           </Card>
                                         )
                                       )}

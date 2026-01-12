@@ -620,7 +620,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Technologies Section ************/
 .technologies {
-  padding: 80px 0;
+  padding: 60px 0;
   position: relative;
   background: #151515;
 }
@@ -642,86 +642,395 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 
-/* Tabs styling */
+/* Tabs styling - Flexible grid */
 .technologies .nav.nav-pills {
-  width: 80%;
-  margin: 0 auto 50px auto;
-  border-radius: 50px;
-  background-color: rgba(255,255,255,0.1);
-  overflow: hidden;
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+  border-radius: 16px;
+  background-color: rgba(255,255,255,0.08);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
 }
 
 .technologies .nav-pills .nav-item {
-  width: 20%;
+  flex: 0 0 auto;
 }
 
 .technologies .nav-pills .nav-link {
   background-color: transparent;
-  border-radius: 0;
-  padding: 15px 0;
-  color: #fff;
-  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: rgba(255,255,255,0.8);
+  font-size: 14px;
   font-weight: 500;
-  position: relative;
-  transition: 0.3s;
+  transition: all 0.3s ease;
   text-align: center;
+  white-space: nowrap;
+  border: 1px solid transparent;
 }
 
-.technologies .nav-pills .nav-link::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 100%;
-  background: linear-gradient(90deg, #AA367C, #4A2FBD);
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: 0.3s;
-}
-
-.technologies .nav-pills .nav-link.active::before {
-  width: 100%;
+.technologies .nav-pills .nav-link:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
 }
 
 .technologies .nav-pills .nav-link.active {
-  border: 1px solid #fff;
+  background: linear-gradient(135deg, #AA367C, #4A2FBD);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
 }
 
 /* Tech cards row */
 .tech-row {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 24px;
   flex-wrap: wrap;
   padding: 20px 0;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* Circular Tech Cards */
+/* Tech Cards - Clean modern design */
 .tech-card {
-  background: #000;
-  border: 4px solid #fff;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  background: linear-gradient(145deg, #1e1e1e, #141414);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  width: 140px;
+  height: 140px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.tech-card img {
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 16px 8px;
 }
 
 .tech-card:hover {
-  transform: scale(1.2);
-  box-shadow: 0 0 25px rgba(255, 69, 0, 0.7);
+  transform: translateY(-8px);
+  border-color: #AA367C;
+  box-shadow: 0 12px 35px rgba(170, 54, 124, 0.25);
 }
 
-.tech-card p {
-  display: none; /* hide label under icon to match your PNG style */
+.tech-card .card-img-top {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.tech-card .card-body {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-card .card-body .card-text {
+  color: rgba(255,255,255,0.9);
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+  line-height: 1.2;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+/************ Project Card Enhancements ************/
+.proj-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #FFD700, #FFA500);
+  color: #000;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-style: normal;
+}
+
+.proj-tech {
+  font-size: 12px !important;
+  color: #ddd !important;
+  margin-top: 10px;
+  font-style: normal !important;
+  opacity: 0.9;
+}
+
+.proj-imgbx img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/************ Certifications Section ************/
+.certifications {
+  padding: 80px 0;
+  position: relative;
+  background-color: #151515;
+}
+
+.certifications h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.certifications p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 50px auto;
+  text-align: center;
+  width: 56%;
+}
+
+.certifications h3 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #AA367C, #4A2FBD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Awards Section */
+.awards-section {
+  margin-bottom: 60px;
+}
+
+.award-card {
+  background: linear-gradient(135deg, rgba(170, 54, 124, 0.2), rgba(74, 47, 189, 0.2));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 40px rgba(170, 54, 124, 0.3);
+}
+
+.award-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.award-card .card-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.award-card .card-text {
+  color: #B8B8B8;
+  font-size: 14px;
+}
+
+/* Education Section */
+.education-section {
+  margin-bottom: 60px;
+}
+
+.edu-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(170, 54, 124, 0.5);
+}
+
+.edu-card .card-subtitle {
+  color: #AA367C !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.edu-card .card-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.edu-card .card-text {
+  color: #B8B8B8;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.edu-card .grade {
+  color: #4A2FBD;
+  font-weight: 700;
+  background: linear-gradient(90deg, #AA367C, #4A2FBD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Certifications Cards Section */
+.certs-section {
+  margin-bottom: 30px;
+}
+
+.cert-card {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  min-height: 200px;
+}
+
+.cert-card:hover {
+  transform: scale(1.05);
+  border-color: #4A2FBD;
+  box-shadow: 0 5px 25px rgba(74, 47, 189, 0.3);
+}
+
+.cert-icon-wrapper {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.cert-icon {
+  max-width: 70px;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+.cert-name {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.cert-provider {
+  color: #B8B8B8;
+  font-size: 12px;
+}
+
+.cert-provider small {
+  color: #AA367C;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .technologies .nav-pills .nav-link {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+  
+  .tech-card {
+    width: 125px;
+    height: 125px;
+  }
+  
+  .tech-card .card-img-top {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .tech-card .card-body .card-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .certifications h2,
+  .technologies h2 {
+    font-size: 32px;
+  }
+  
+  .certifications p,
+  .technologies p {
+    width: 90%;
+    font-size: 16px;
+  }
+  
+  .technologies .nav.nav-pills {
+    width: 98%;
+    padding: 10px;
+    gap: 6px;
+  }
+  
+  .technologies .nav-pills .nav-link {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  
+  .tech-row {
+    gap: 14px;
+    padding: 15px 10px;
+  }
+  
+  .tech-card {
+    width: 105px;
+    height: 105px;
+    padding: 12px 6px;
+  }
+  
+  .tech-card .card-img-top {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+  }
+  
+  .tech-card .card-body .card-text {
+    font-size: 11px;
+  }
+  
+  .banner h1 {
+    font-size: 40px;
+  }
+  
+  .banner .tagline {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tech-row {
+    gap: 10px;
+  }
+  
+  .tech-card {
+    width: 95px;
+    height: 95px;
+    padding: 10px 4px;
+  }
+  
+  .tech-card .card-img-top {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 6px;
+  }
+  
+  .tech-card .card-body .card-text {
+    font-size: 10px;
+  }
+  
+  .technologies .nav-pills .nav-link {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
 }
