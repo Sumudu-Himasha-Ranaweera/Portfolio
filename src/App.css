@@ -637,24 +637,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Quick Contact Section ************/
 .contact-info-bx {
-  background: linear-gradient(135deg, rgba(170, 54, 124, 0.15), rgba(74, 47, 189, 0.15));
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 30px;
-  padding: 40px 50px;
-  margin-bottom: 50px;
-  margin-top: -80px;
-  backdrop-filter: blur(10px);
+  background: #FFFFFF;
+  border-radius: 55px;
+  padding: 50px 80px;
+  margin-bottom: 80px;
+  margin-top: -122px;
 }
 
 .contact-info-bx h3 {
-  color: #fff;
+  color: #121212;
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 10px;
 }
 
 .contact-info-bx p {
-  color: #B8B8B8;
+  color: #757575;
   font-size: 16px;
   margin-bottom: 0;
 }
@@ -671,23 +669,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #fff;
+  color: #121212;
   text-decoration: none;
   padding: 12px 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #fff;
   border-radius: 25px;
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid #AA367C;
 }
 
 .contact-item:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  background: linear-gradient(135deg, rgba(170, 54, 124, 0.1), rgba(74, 47, 189, 0.1));
+  color: #121212;
   transform: translateY(-3px);
 }
 
 .contact-item svg {
   flex-shrink: 0;
+  stroke: #AA367C;
 }
 
 .contact-item span {

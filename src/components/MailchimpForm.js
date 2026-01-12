@@ -7,7 +7,7 @@ export const MailchimpForm = () => {
         <Row className="align-items-center">
           <Col lg={5}>
             <h3>Quick Contact</h3>
-            <p>Let's connect and build something amazing together!</p>
+            <p>Let's connect!</p>
           </Col>
           <Col lg={7}>
             <div className="contact-details">
