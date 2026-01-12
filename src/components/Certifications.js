@@ -69,13 +69,15 @@ export const Certifications = () => {
       name: "Oracle Cloud Infrastructure 2023",
       provider: "Oracle",
       date: "Feb 2023",
-      icon: "https://brm-workforce.oracle.com/pdf/certview/images/OCI2023CAFA.png",
+      icon: "oracle",
+      isOracle: true,
     },
     {
       name: "Oracle Cloud Data Management 2023",
       provider: "Oracle",
       date: "March 2023",
-      icon: "https://brm-workforce.oracle.com/pdf/certview/images/OCI2023CDMA.png",
+      icon: "oracle",
+      isOracle: true,
     },
   ];
 
@@ -160,14 +162,21 @@ export const Certifications = () => {
                           <Card className="cert-card h-100 text-center">
                             <Card.Body>
                               <div className="cert-icon-wrapper">
-                                <img 
-                                  src={cert.icon} 
-                                  alt={cert.name}
-                                  className="cert-icon"
-                                  onError={(e) => {
-                                    e.target.style.display = 'none';
-                                  }}
-                                />
+                                {cert.isOracle ? (
+                                  <div className="oracle-badge">
+                                    <span className="oracle-text">ORACLE</span>
+                                    <span className="oracle-certified">CERTIFIED</span>
+                                  </div>
+                                ) : (
+                                  <img 
+                                    src={cert.icon} 
+                                    alt={cert.name}
+                                    className="cert-icon"
+                                    onError={(e) => {
+                                      e.target.style.display = 'none';
+                                    }}
+                                  />
+                                )}
                               </div>
                               <Card.Title className="cert-name">{cert.name}</Card.Title>
                               <Card.Text className="cert-provider">
