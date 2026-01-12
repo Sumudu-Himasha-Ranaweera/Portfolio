@@ -6,6 +6,13 @@ import colorSharp from "../assets/img/color-sharp.png";
 export const Certifications = () => {
   const education = [
     {
+      institution: "University of Colombo",
+      degree: "Master of Science in Computer Science",
+      specialization: "MSc in CS",
+      period: "2025 - 2027",
+      grade: "Pursuing",
+    },
+    {
       institution: "SLIIT (Sri Lanka Institute of Information Technology)",
       degree: "BSc (Hons) in Information Technology",
       specialization: "Specializing in Software Engineering",
@@ -140,13 +147,13 @@ export const Certifications = () => {
                     <h3>Education</h3>
                     <Row className="justify-content-center align-items-stretch">
                       {education.map((edu, index) => (
-                        <Col key={index} xs={12} md={4} className="mb-4 d-flex">
+                        <Col key={index} xs={12} sm={6} lg={3} className="mb-4 d-flex">
                           <div className="edu-card-static">
                             <span className="edu-period">{edu.period}</span>
                             <h4>{edu.institution}</h4>
                             <p className="edu-degree">{edu.degree}</p>
                             <p className="edu-spec">{edu.specialization}</p>
-                            {edu.grade && <span className="edu-grade">{edu.grade}</span>}
+                            {edu.grade && <span className={`edu-grade ${edu.grade === "Pursuing" ? "pursuing" : ""}`}>{edu.grade}</span>}
                           </div>
                         </Col>
                       ))}

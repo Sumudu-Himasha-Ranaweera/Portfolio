@@ -963,6 +963,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: auto;
 }
 
+.edu-grade.pursuing {
+  background: linear-gradient(135deg, #00D4AA, #00B894);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 212, 170, 0.3);
+}
+
 /* Certifications Cards Section */
 .certs-section {
   margin-bottom: 30px;
