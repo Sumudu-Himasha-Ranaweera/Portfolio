@@ -634,6 +634,115 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   line-height: 1.2em;
 }
+
+/************ Quick Contact Section ************/
+.contact-info-bx {
+  background: linear-gradient(135deg, rgba(170, 54, 124, 0.15), rgba(74, 47, 189, 0.15));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 40px 50px;
+  margin-bottom: 50px;
+  margin-top: -80px;
+  backdrop-filter: blur(10px);
+}
+
+.contact-info-bx h3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-info-bx p {
+  color: #B8B8B8;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.contact-item svg {
+  flex-shrink: 0;
+}
+
+.contact-item span {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.download-cv-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #AA367C, #4A2FBD);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.download-cv-btn:hover {
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(170, 54, 124, 0.4);
+}
+
+.download-cv-btn span {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .contact-info-bx {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .contact-details {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-details {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-item,
+  .download-cv-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .new-email-bx {
   background: #fff;
   padding: 5px;
