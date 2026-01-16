@@ -256,9 +256,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 20px;
   display: block;
+  min-height: 160px;
 }
 .banner p {
   color: #B8B8B8;
@@ -300,13 +301,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     }
 }
 .txt-rotate {
-  display: inline-block;
-  min-width: 320px;
-  text-align: left;
+  display: block;
+  min-height: 70px;
 }
 
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+  white-space: nowrap;
 }
 
 /************ Skills Css ************/
@@ -1233,10 +1234,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
   .banner h1 {
     font-size: 40px;
+    min-height: 100px;
   }
 
   .txt-rotate {
-    min-width: 200px;
+    min-height: 45px;
   }
   
   .banner .tagline {

@@ -7,15 +7,14 @@ import headerImg from "../assets/img/header-img.svg";
 
 export const Banner = () => {
   const toRotate = [
-    "Senior DevOps Engineer",
-    "AWS & Azure Specialist",
-    "AI Development Lead",
-    "Cloud Infrastructure Expert",
+    "DevOps Expert",
+    "Cloud Specialist",
+    "AI Developer Expert",
   ];
 
-  const TYPING_SPEED = 90;
-  const DELETING_SPEED = 70;
-  const PAUSE_TIME = 1400;
+  const TYPING_SPEED = 100;
+  const DELETING_SPEED = 180;
+  const PAUSE_TIME = 1200;
 
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
