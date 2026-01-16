@@ -17,7 +17,7 @@ export const Certifications = () => {
       degree: "BSc (Hons) in Information Technology",
       specialization: "Specializing in Software Engineering",
       period: "2019 - 2023",
-      grade: "First Class | GPA: 3.74",
+      grade: "Second Class Honours",
     },
     {
       institution: "University of Moratuwa",
