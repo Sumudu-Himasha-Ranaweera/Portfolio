@@ -1002,6 +1002,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 15px;
 }
 
+.award-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  color: #000;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
 .award-card .card-title {
   color: #fff;
   font-size: 18px;
@@ -1012,6 +1025,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .award-card .card-text {
   color: #B8B8B8;
   font-size: 14px;
+}
+
+.award-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 15px;
+  color: #FFD700;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.award-link:hover {
+  color: #FFA500;
+  text-decoration: underline;
+}
+
+.award-link .external-icon {
+  font-size: 12px;
 }
 
 /* Education Section */

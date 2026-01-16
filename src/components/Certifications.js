@@ -100,9 +100,11 @@ export const Certifications = () => {
       icon: "🥇",
     },
     {
-      title: "Research Paper Publication",
-      description: "5th International Conference on Advancements in Computing (2023)",
+      title: "Research Publication",
+      description: "Sign Language Translation with 3D Avatar",
       icon: "📄",
+      link: "https://ieeexplore.ieee.org/document/10417474",
+      badge: "IEEE PUBLISHED",
     },
   ];
 
@@ -132,9 +134,15 @@ export const Certifications = () => {
                         <Col key={index} xs={12} md={4} className="mb-4">
                           <Card className="award-card h-100">
                             <Card.Body className="text-center">
-                              <div className="award-icon">{award.icon}</div>
+                              {award.badge && <span className="award-badge">{award.badge}</span>}
+                              {!award.badge && <div className="award-icon">{award.icon}</div>}
                               <Card.Title>{award.title}</Card.Title>
                               <Card.Text>{award.description}</Card.Text>
+                              {award.link && (
+                                <a href={award.link} target="_blank" rel="noopener noreferrer" className="award-link">
+                                  View Paper <span className="external-icon">↗</span>
+                                </a>
+                              )}
                             </Card.Body>
                           </Card>
                         </Col>
